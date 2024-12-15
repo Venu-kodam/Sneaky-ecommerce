@@ -1,0 +1,3 @@
+
+To add the product we will create middleware using multer so that if we send any file as
+form data then that file will be parsed using multer
