@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
@@ -20,18 +20,20 @@ const App = () => {
       <ToastContainer />
       <Navbar />
       <SearchBar />
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/collections' element={<Collections/>}/>
-        <Route path='/product/:productId' element={<Product/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/orders' element={<Orders/>}/>
-        <Route path='/placeorder' element={<Placeorder/>}/>
-        <Route path='/cart' element={<Cart/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/verify' element={<Verify/>}/>
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/collections' element={<Collections />} />
+          <Route path='/product/:productId' element={<Product />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/orders' element={<Orders />} />
+          <Route path='/placeorder' element={<Placeorder />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/verify' element={<Verify />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   )
