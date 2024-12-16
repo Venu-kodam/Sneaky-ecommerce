@@ -14,7 +14,6 @@ const ShopContextProvider = ({ children }) => {
     const[products,setProducts] = useState([])
     const[cartitems,setCartItems] = useState({})
     const navigate = useNavigate()
-
     const [token,setToken] = useState('')
     const addToCart=async(itemId,size)=>{
         if(!size){

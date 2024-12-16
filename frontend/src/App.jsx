@@ -20,7 +20,6 @@ const App = () => {
       <ToastContainer />
       <Navbar />
       <SearchBar />
-      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -33,7 +32,6 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/verify' element={<Verify />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
     </div>
   )
