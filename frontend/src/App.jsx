@@ -1,4 +1,3 @@
-import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
@@ -13,6 +12,7 @@ import SearchBar from './components/SearchBar'
 import Footer from './components/Footer'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { Route, Routes } from 'react-router-dom'
 import Verify from './pages/Verify'
 const App = () => {
   return (
